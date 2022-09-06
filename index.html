@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="load.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="img/png" href="img/palm.png">
+    <title>Travelgram</title>
+</head>
+
+<body onload="loadContent(), loadStories(), loadFollowerProfile()">
+    <header>
+        <div class="header-box">
+            <div>
+                <a href="index.html"><h1 class="cursor effect">Travelgram</h1></a>
+            </div>
+
+            <div class="search-box">
+                <img class="cursor effect" src="img/search.png">
+                <input onclick="noFunction()" type="text" placeholder="Suchen">
+            </div>
+
+            <div class="icon-box">
+                <a class="effect" href=""><img src="img/icon-home.png"></a>
+                <a class="effect" href=""><img src="img/icon-plane.png"></a>
+                <a class="effect" href=""><img src="img/icon-add.png"></a>
+                <a class="effect" href=""><img src="img/icon-compas.png"></a>
+                <a class="effect" href=""><img src="img/icon-heart.png"></a>
+                <a class="effect" href=""><img class="img-icon-me" src="img/icon-me.jpg"></a>
+            </div>
+        </div>
+    </header>
+
+        <div class="page-bg">
+
+            <div class="main">
+                <div id="stories-box" class="stories-box">
+                </div>
+
+                <div class="content" id="content">
+                </div>
+
+            </div>
+
+            <div class="follower-section">
+                <div class="my-profile">
+                    <div class="my-profile-name-img">
+                        <img class="cursor effect" src="img/icon-me.jpg">
+                        <span class="cursor effect">nastya_uenal</span>
+                    </div>
+                    <span class="change-elm effect cursor">Wechseln</span>
+                </div>
+
+                <div class="proposition">
+                    <span class="cursor effect">Vorschläge für dich</span>
+                    <span class="cursor effect">Alle ansehen</span>
+                </div>
+
+                <div id="follower-profile"></div>
+
+                <div class="footer-links">
+                    <a href="impressum.html"><span class="footer-effect">Impressum</span></a> • <a href="datenschutz.html"><span class="footer-effect">Datenschutz</span></a> <br>
+                    <br>
+                    <span> © 2022 Travelgram </span>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
